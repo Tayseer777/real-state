@@ -1,0 +1,150 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lands",
+  "info": {
+    "singularName": "land",
+    "pluralName": "lands",
+    "displayName": "الأراضي",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "province": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "city": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "basin_name": {
+      "type": "string",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "basin_number": {
+      "type": "biginteger",
+      "pluginOptions": {}
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "province"
+    },
+    "owner": {
+      "type": "string",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "land_number": {
+      "type": "biginteger",
+      "pluginOptions": {}
+    },
+    "total_area": {
+      "type": "biginteger",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "total_owned_area": {
+      "type": "biginteger",
+      "pluginOptions": {}
+    },
+    "price": {
+      "type": "integer",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "land_shares": {
+      "type": "integer",
+      "pluginOptions": {}
+    },
+    "total_owned_shares": {
+      "type": "integer",
+      "pluginOptions": {}
+    },
+    "area": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "pluginOptions": {}
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "residential land",
+        "agricultural",
+        "industrial",
+        "commercial"
+      ],
+      "required": true,
+      "pluginOptions": {}
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {}
+    },
+    "classification": {
+      "type": "enumeration",
+      "enum": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "pluginOptions": {}
+    },
+    "if_commercial": {
+      "type": "enumeration",
+      "enum": [
+        "commercial complex",
+        "industrial complex",
+        "residential complex",
+        "apartment",
+        "Villa"
+      ],
+      "pluginOptions": {}
+    },
+    "stakeholders": {
+      "type": "richtext",
+      "default": "null",
+      "pluginOptions": {}
+    },
+    "apartment_level": {
+      "type": "integer",
+      "unique": false,
+      "required": true,
+      "pluginOptions": {}
+    },
+    "age_of_building": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "building_area": {
+      "type": "biginteger",
+      "pluginOptions": {}
+    },
+    "complex_levels": {
+      "type": "integer",
+      "pluginOptions": {}
+    },
+    "location": {
+      "type": "json",
+      "pluginOptions": {}
+    }
+  }
+}
