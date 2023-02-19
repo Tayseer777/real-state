@@ -9,6 +9,8 @@ const config = {
       "global.plugins.upload": "الصور",
       "Media Library": "الصور",
       "app.components.LeftMenuLinkContainer.general": "عام",
+      "app.components.LeftMenu.general": "عام",
+
     },
   },
 
