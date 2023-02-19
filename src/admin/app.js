@@ -2,7 +2,12 @@
 // import favicon from './extensions/favicon.png'
 
 const config = {
-  locales: ['ar']
+  locales: ['ar'],
+  translations: {
+    ar: {
+      City: 'مدينة',
+    },
+  },
 
 //   config: {
 //     locales: ['ar']
