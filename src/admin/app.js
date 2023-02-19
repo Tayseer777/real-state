@@ -6,6 +6,8 @@ const config = {
   translations: {
     ar: {
       City: 'مدينة',
+      "global.plugins.upload": "الصور",
+      "Media Library": "الصور",
     },
   },
 
