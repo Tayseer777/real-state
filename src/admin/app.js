@@ -8,7 +8,7 @@ const config = {
       City: 'مدينة',
       "global.plugins.upload": "الصور",
       "Media Library": "الصور",
-      "Email": "ايميل"
+      "app.components.LeftMenuLinkContainer.general": "عام",
     },
   },
 
