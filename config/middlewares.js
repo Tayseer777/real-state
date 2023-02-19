@@ -1,31 +1,17 @@
 module.exports = [
   'strapi::errors',
-  {
-    name: 'strapi::security',
-    config: {
-      contentSecurityPolicy: {
-        useDefaults: true,
-        directives: {
-          'connect-src': ["'self'", 'https:'],
-          'img-src': [
-            "'self'",
-            'data:',
-            'blob:',
-            'dl.airtable.com',
-            'yourBucketName.s3.yourRegion.amazonaws.com',
-          ],
-          'media-src': [
-            "'self'",
-            'data:',
-            'blob:',
-            'dl.airtable.com',
-            'yourBucketName.s3.yourRegion.amazonaws.com',
-          ],
-          upgradeInsecureRequests: null,
-        },
-      },
-    },
-  },
+  "strapi::security",
+  // {
+  //   name: "strapi::security",
+  //   config: {
+  //   contentSecurityPolicy: {
+  //     directives: {
+  //       "script-src": ["'self'", "maps.googleapis.com", "maps.gstatic.com"],
+  //       "img-src": ["'self'", "data:", "maps.googleapis.com", "maps.gstatic.com"],
+  //     },
+  //   },
+  //   },
+  // },
   'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',

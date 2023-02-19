@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "owners",
+  "info": {
+    "singularName": "owner",
+    "pluralName": "owners",
+    "displayName": "owner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "address": {
+      "type": "text"
+    },
+    "job": {
+      "type": "string"
+    },
+    "lands": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::land.land",
+      "mappedBy": "owner"
+    }
+  }
+}

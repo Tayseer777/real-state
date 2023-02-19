@@ -35,21 +35,7 @@
       "type": "uid",
       "targetField": "province"
     },
-    "owner": {
-      "type": "string",
-      "required": true,
-      "pluginOptions": {}
-    },
     "land_number": {
-      "type": "biginteger",
-      "pluginOptions": {}
-    },
-    "total_area": {
-      "type": "biginteger",
-      "required": true,
-      "pluginOptions": {}
-    },
-    "total_owned_area": {
       "type": "biginteger",
       "pluginOptions": {}
     },
@@ -130,14 +116,6 @@
       "required": true,
       "pluginOptions": {}
     },
-    "age_of_building": {
-      "type": "string",
-      "pluginOptions": {}
-    },
-    "building_area": {
-      "type": "biginteger",
-      "pluginOptions": {}
-    },
     "complex_levels": {
       "type": "integer",
       "pluginOptions": {}
@@ -145,6 +123,24 @@
     "location": {
       "type": "json",
       "pluginOptions": {}
+    },
+    "total_area": {
+      "type": "string"
+    },
+    "total_owned_area": {
+      "type": "string"
+    },
+    "age_of_building": {
+      "type": "integer"
+    },
+    "building_area": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::owner.owner",
+      "inversedBy": "lands"
     }
   }
 }
